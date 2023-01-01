@@ -6,6 +6,14 @@
 #include "DIO_prv.h"
 #include "DIO_reg.h"
 
+/**
+ * @brief this function is used to set a required pin direction
+ * @param Copy_u8Port this parameter is used to choose the required port among DIO_u8PORTA, DIO_u8PORTB, DIO_u8PORTC ,DIO_u8PORTD
+ * @param Copy_u8Pin this parameter is used to choose the required pin among DIO_u8PINA, DIO_u8PINB, DIO_u8PINC ,DIO_u8PIND
+ * @param Copy_u8Direction this parameter is used to choose the required port among DIO_u8DirectionA, DIO_uDirectionB, DIO_u8DirectionC ,DIO_u8Direction D
+ * @return
+ */
+
 uint8 DIO_u8SetPinDirection(uint8 Copy_u8Port, uint8 Copy_u8Pin, uint8 Copy_u8Direction)
 {
 	uint8 Local_u8ErrorState = OK;
